@@ -1,74 +1,85 @@
-Project Tracker
-Project Title
+# Project Tracker
+
+## Project Title
+
 AI-Powered Expense Policy Compliance Agent
-1. Documentation
-prd.md completed
-techspec.md completed
-appflow.md completed
-schema.md completed
-rules.md completed
-design.md completed
-implementplan.md completed
-tracker.md created
 
-2. Project Setup
-Create the project folder
-Create a Python virtual environment
-Install required packages
-Create the .env file
-Add API keys
-Create the basic FastAPI application
+## 1. Documentation Status
 
-3. Policy Processing
-Add a sample company expense policy
-Load the policy document
-Extract the policy text
-Split the policy into chunks
-Add policy metadata
-Create policy embeddings
-Store the policy data in Pinecone
+- `prd.md`: completed
+- `techspec.md`: completed
+- `appflow.md`: completed
+- `schema.md`: completed
+- `rules.md`: completed
+- `design.md`: completed
+- `Implementation.md`: completed
+- `tracker.md`: created
 
-4. AI Agent and RAG
-Create the policy retrieval tool
-Connect the tool with Pinecone
-Create the AI agent
-Add agent instructions
-Connect the AI agent with the retrieval tool
-Create structured agent output
-Add the output guardrail
+## 2. Project Setup
 
-5. FastAPI Development
-Create Pydantic schemas
-Create POST /policy/upload
-Create POST /compliance/check
-Create GET /compliance/{id}/clause
-Create GET /policy/versions
-Create GET /health
-Connect the APIs with the AI agent
+- create the project folder
+- create a Python virtual environment
+- install required packages
+- create the `.env` file
+- add API keys
+- create the basic FastAPI application
 
-6. Testing
-Test a compliant expense
-Test a non-compliant expense
-Test an expense above the policy limit
-Test an expense requiring approval
-Test missing information
-Test a missing receipt
-Test the Policy is Silent case
-Test invalid input
-Test policy retrieval errors
-Test the output guardrail
+## 3. Policy Processing
 
-7. Final Review
-Check all API endpoints
-Check policy retrieval results
-Check explanations and policy references
-Check structured output
-Check API key security
-Update all documents
-Prepare the final demo
+- add a sample company expense policy
+- load the policy document
+- extract the policy text
+- split the policy into chunks
+- add policy metadata
+- create policy embeddings
+- store the policy data in Pinecone
 
-8. Current Project Status
-Documentation: Completed ✅
-Development: Not started ⏳
-Testing: Not started ⏳
-Project Status: Planning phase completed. Development is the next step.
+## 4. AI Agent and RAG
+
+- create the policy retrieval tool
+- connect the tool with Pinecone
+- create the AI agent
+- add agent instructions
+- connect the AI agent with the retrieval tool
+- create structured agent output
+- add the output guardrail
+
+## 5. FastAPI Development
+
+- create Pydantic schemas
+- create `POST /policy/upload`
+- create `POST /compliance/check`
+- create `GET /compliance/{id}/clause`
+- create `GET /policy/versions`
+- create `GET /health`
+- connect the APIs with the AI agent
+
+## 6. Testing
+
+- test a compliant expense
+- test a non-compliant expense
+- test an expense above the policy limit
+- test an expense requiring approval
+- test missing information
+- test a missing receipt
+- test the `Policy is Silent` case
+- test invalid input
+- test policy retrieval errors
+- test the output guardrail
+
+## 7. Final Review
+
+- check all API endpoints
+- check policy retrieval results
+- check explanations and policy references
+- check structured output
+- check API key security
+- update all documents
+- prepare the final demo
+
+## 8. Current Project Status
+
+- Documentation: Completed ✅
+- Development: Not started ⏳
+- Testing: Not started ⏳
+- Project status: Planning phase completed. Development is the next step.
