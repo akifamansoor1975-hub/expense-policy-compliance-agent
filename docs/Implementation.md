@@ -1,4 +1,4 @@
-Implementation Plan
+Implementation Planing
 Project Title
 AI-Powered Expense Policy Compliance Agent
 1. Project Setup
