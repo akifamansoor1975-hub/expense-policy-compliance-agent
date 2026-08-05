@@ -1,0 +1,13 @@
+COMPANY EXPENSE POLICY
+
+1. Meal Expenses
+The maximum allowed amount for a meal expense is PKR 5,000.
+
+2. Travel Expenses
+The maximum allowed amount for a travel expense is PKR 30,000.
+
+3. Accommodation Expenses
+The maximum allowed amount for an accommodation expense is PKR 15,000.
+
+4. Receipt Requirement
+A valid receipt is required for all expense claims.
