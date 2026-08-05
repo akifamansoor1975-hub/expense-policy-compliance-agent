@@ -33,3 +33,16 @@ def extract_policy_limits():
             limits[category] = float(amount)
 
     return limits
+
+
+def is_receipt_required():
+
+    policy_text = read_policy()
+
+    receipt_rule = re.search(
+        r"receipt is required",
+        policy_text,
+        re.IGNORECASE
+    )
+
+    return receipt_rule is not None

@@ -1,7 +1,11 @@
 from fastapi import FastAPI
 
 from app.schemas import ExpenseClaim, ComplianceResult
-from app.policy_reader import read_policy, extract_policy_limits
+from app.policy_reader import (
+    read_policy,
+    extract_policy_limits,
+    is_receipt_required
+)
 
 
 app = FastAPI(
@@ -42,12 +46,12 @@ def check_expense(expense: ExpenseClaim):
 
     category = expense.category.lower()
 
-    # Check if the receipt is available
-    if not expense.receipt_available:
+    # Check the receipt requirement from the company policy
+    if is_receipt_required() and not expense.receipt_available:
         return ComplianceResult(
             status="Needs Human Review",
             explanation="The expense cannot be fully checked because the receipt is not available.",
-            policy_reference="Receipt is required for expense verification.",
+            policy_reference="Receipt is required according to the company policy.",
             missing_information=["Receipt"],
             future_guidance="Upload the receipt and submit the expense again."
         )
